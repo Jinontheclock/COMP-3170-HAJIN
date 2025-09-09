@@ -1,7 +1,7 @@
 import React from "react";
 import BookCard from "./components/BookCard";
 import norwegianWood from "./assets/NorwegianWood.jpg";
-import iQ84 from "./assets/iq84.jpg"
+import iQ84 from "./assets/iQ84.jpg"
 import "./App.css";
 
 function App() {
