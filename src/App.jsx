@@ -1,7 +1,6 @@
 import React from "react";
 import BookCard from "./components/BookCard";
-import norwegianWood from "./assets/NorwegianWood.jpg";
-import iQ84 from "./assets/iQ84.jpg"
+import books from "../data/books.json";
 import "./App.css";
 
 function App() {
@@ -11,27 +10,30 @@ function App() {
         <h1>Book Catalog</h1>
       </header>
 
-      <main className="content">
-
+      <main>
+        <div className="main">
+          <div className="new">
         <BookCard />
+            </div>
 
-        <BookCard
-          title="Norwegian Wood"
-          authors="Murakami Haruki"
-          image={norwegianWood}
-          link="https://en.wikipedia.org/wiki/Norwegian_Wood_(novel)"
-        />
+        <div className="content">
+        {books.map((book) => (
+          <BookCard 
+          key={book.isbn13}
+          title={book.title}
+          subtitle={book.subtitle}
+          price={book.price}
+          image={book.image}
+          url={book.url}
+          />
+        ))}
+        </div>
+          </div>
 
-        <BookCard
-          title="1Q84"
-          authors="Murakami Haruki"
-          image={iQ84}
-          link="https://en.wikipedia.org/wiki/1Q84"
-        />
       </main>
 
       <footer className="footer">
-        Hajin Lee, 2025
+        &#169;Hajin Lee, 2025
       </footer>
     </div>
   );

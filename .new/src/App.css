@@ -12,22 +12,9 @@ body {
   color: white;
 }
 
-.main{
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 20px;
-}
-
-.new{
-  padding: 30px;
-  gap: 20px;
-
-}
-
 .content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
-  gap: 40px;
+  display: flex;
+  gap: 20px;
   justify-content: center;
   padding: 30px;
 }
