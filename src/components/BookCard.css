@@ -9,11 +9,9 @@
   overflow: hidden;
   background-color: rgb(233, 233, 233);
   border-radius: 4px;
-<<<<<<< HEAD
   position: relative;
-=======
->>>>>>> c4f08ee75648232740b80bca09ee450ebbd13f33
-}
+  }
+
 
 .book-image {
   width: 100%;
@@ -68,7 +66,6 @@
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
-<<<<<<< HEAD
 }
 
 .remove-btn {
@@ -85,10 +82,3 @@
   margin: 4px;
   padding: 4px 8px;
 }
-
-.remove-btn:hover {
-  background-color: #7c1f30;
-}
-=======
-}
->>>>>>> c4f08ee75648232740b80bca09ee450ebbd13f33
