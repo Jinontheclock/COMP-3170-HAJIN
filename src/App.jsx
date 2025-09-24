@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import BookCard from "./components/BookCard";
 import Modal from "./components/Modal";
@@ -35,6 +36,14 @@ function App() {
     setBooks(books.filter((book) => book.isbn13 !== isbn13));
   };
 
+=======
+import React from "react";
+import BookCard from "./components/BookCard";
+import books from "../data/books.json";
+import "./App.css";
+
+function App() {
+>>>>>>> c4f08ee75648232740b80bca09ee450ebbd13f33
   return (
     <div className="app">
       <header className="header">
@@ -43,6 +52,7 @@ function App() {
 
       <main>
         <div className="main">
+<<<<<<< HEAD
 
           <div className="new" onClick={openModal}>
             <BookCard />
@@ -75,6 +85,31 @@ function App() {
           onClose={closeModal}
         />
       )}
+=======
+          <div className="new">
+        <BookCard />
+            </div>
+
+        <div className="content">
+        {books.map((book) => (
+          <BookCard 
+          key={book.isbn13}
+          title={book.title}
+          subtitle={book.subtitle}
+          price={book.price}
+          image={book.image}
+          url={book.url}
+          />
+        ))}
+        </div>
+          </div>
+
+      </main>
+
+      <footer className="footer">
+        &#169;Hajin Lee, 2025
+      </footer>
+>>>>>>> c4f08ee75648232740b80bca09ee450ebbd13f33
     </div>
   );
 }
